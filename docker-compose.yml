@@ -1,0 +1,12 @@
+services:
+  playwright:
+    image: playwright-final
+    container_name: playwright-container
+
+    volumes:
+      - .:/app
+
+    env_file:
+      - .env
+
+    command: npx playwright test --project=chromium

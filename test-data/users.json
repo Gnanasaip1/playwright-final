@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "userType": "validUser",
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "expected": "success"
+    },
+    {
+      "userType": "lockedUser",
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "expected": "error",
+      "errorMessage": "Epic sadface: Sorry, this user has been locked out."
+    },
+    {
+      "userType": "problemUser",
+      "username": "problem_user",
+      "password": "secret_sauce",
+      "expected": "success"
+    },
+    {
+      "userType": "performanceUser",
+      "username": "performance_glitch_user",
+      "password": "secret_sauce",
+      "expected": "success"
+    },
+    {
+      "userType": "errorUser",
+      "username": "error_user",
+      "password": "secret_sauce",
+      "expected": "success"
+    },
+    {
+      "userType": "visualUser",
+      "username": "visual_user",
+      "password": "secret_sauce",
+      "expected": "success"
+    },
+    {
+      "userType": "invalidUser",
+      "username": "wrong_user",
+      "password": "wrong_password",
+      "expected": "error",
+      "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+    },
+    {
+      "userType": "checking wrong user",
+      "username": "check_username",
+      "password": "check_password",
+      "expected": "error",
+      "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+    }
+  ]
+}

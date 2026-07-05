@@ -1,0 +1,28 @@
+{
+  "name": "playwright-bdd-framework",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "playwright test",
+    "report": "playwright show-report",
+    "send-report": "ts-node utils/emailReport.ts",
+    "test-email": "ts-node utils/runTests.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.4",
+    "@types/nodemailer": "^8.0.1",
+    "dotenv": "^17.4.2",
+    "nodemailer": "^9.0.1",
+    "npm-run-all": "^4.1.5",
+    "playwright-bdd": "^8.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
